@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
 }
 
 :root {
@@ -22,7 +23,9 @@ body {
 }
 
 /* Typography */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-weight: bold;
     margin-bottom: 1rem;
 }
@@ -45,7 +48,8 @@ p {
 }
 
 a {
-    color: #00ADB5; /* Example color for links */
+    color: #00ADB5;
+    /* Example color for links */
     text-decoration: none;
 }
 
@@ -61,7 +65,8 @@ ul {
 .introduction-role {
     font-size: 1.5rem;
     margin-top: 1rem;
-    color: #EEEEEE; /* Example color for role */
+    color: #EEEEEE;
+    /* Example color for role */
 }
 
 .introduction-description {
@@ -74,25 +79,27 @@ ul {
 }
 
 /* Navigation (assuming you'll implement it later) */
-.navigation { 
-    /* Add styles for navigation when implemented */ 
+.navigation {
+    /* Add styles for navigation when implemented */
     display: none;
 }
 
 /* Links */
 .links {
     margin-top: 2rem;
-    display: flex; /* Arrange icons in a row */
+    display: flex;
+    /* Arrange icons in a row */
 }
 
 .link-icon {
     width: 32px;
     height: 32px;
-    margin: 0 12px; /* Adjust spacing between icons */
+    margin: 0 12px;
+    /* Adjust spacing between icons */
 }
 
 /* Content */
-.content > * {
+.content>* {
     margin-top: 4rem;
 }
 
@@ -113,7 +120,8 @@ ul {
 
 .experience-time {
     font-size: 0.8rem;
-    color: #AAAAAA; /* Example color for time */
+    color: #AAAAAA;
+    /* Example color for time */
 }
 
 .experience-details {
@@ -132,12 +140,18 @@ ul {
     font-size: 1rem;
 }
 
+.projects {
+    padding-bottom: 2rem;
+    /* Adjust spacing as needed */
+}
+
 /* Projects */
 .project-item {
     border: 1px solid #ccc;
     padding: 20px;
     margin-bottom: 20px;
-    border-radius: 5px; /* Add a subtle border radius */
+    border-radius: 5px;
+    /* Add a subtle border radius */
 }
 
 .project-title {
@@ -158,29 +172,47 @@ ul {
 
 /* Resume */
 .resume {
-    display: inline-block; /* Allow for padding */
-    background-color: #00ADB5; /* Example button color */
+    display: inline-block;
+    /* Allow for padding */
+    background-color: #00ADB5;
+    /* Example button color */
     color: #EEEEEE;
-    padding: 12px 24px; 
+    padding: 12px 24px;
     border-radius: 5px;
     margin-top: 3rem;
-    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+    transition: background-color 0.3s ease;
+    /* Add a smooth transition effect */
 }
 
 .resume:hover {
-    background-color: #007a85; /* Example hover color */
+    background-color: #007a85;
+    /* Example hover color */
 }
 
 .section-heading {
     font-size: 1.75rem;
     color: #FFFFF0;
     margin-bottom: 2rem;
-    position: sticky; /* Enable sticky positioning */
-    top: 0; /* Position at the top */
-    background-color: #222831; /* Match the background color */
-    z-index: 1; /* Ensure it stays on top of other elements */ 
+    position: sticky;
+    /* Enable sticky positioning */
+    top: 0;
+    /* Position at the top */
+    background-color: #222831;
+    /* Match the background color */
+    z-index: 1;
+    /* Ensure it stays on top of other elements */
     padding-top: 1rem;
     padding-bottom: 1rem;
+}
+
+.about p {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.school {
+    font-weight: bold;
+    color: #FFCB05;
 }
 
 /* Responsiveness - Example for smaller screens */
@@ -188,8 +220,10 @@ ul {
     body {
         margin: 20px;
     }
+
     .experience-item {
-        grid-template-columns: 1fr 3fr; /* Stack items vertically */
+        grid-template-columns: 1fr 3fr;
+        /* Stack items vertically */
     }
 }
 
@@ -198,7 +232,8 @@ ul {
     body {
         margin: auto;
         max-width: 1280px;
-        height: 100vh; /* Add height to the parent container */
+        height: 100vh;
+        /* Add height to the parent container */
         display: flex;
     }
 
@@ -216,33 +251,42 @@ ul {
         flex: 1 1 1px;
         padding-left: 2rem;
         padding-right: 2rem;
-        margin-left: 300px; /* Add margin-left to push the content to the right */
+        margin-left: 300px;
+        /* Add margin-left to push the content to the right */
     }
+
     .left {
         position: fixed;
         top: 0;
         background-color: #393E46;
         padding: 2rem;
-        width: 300px; /* Adjust the width as needed */
+        width: 300px;
+        /* Adjust the width as needed */
     }
+
     .headshot {
         display: block;
-        width:100%;
+        width: 100%;
     }
+
     .section-heading {
-        position:static; /* Disable sticky positioning */
+        position: static;
+        /* Disable sticky positioning */
 
     }
 
     .navigation a {
-        transition: color 0.3s ease, padding-left 0.3s ease; /* Add transition */
+        transition: color 0.3s ease, padding-left 0.3s ease;
+        /* Add transition */
     }
 
-    .navigation a:hover, .navigation a.active {
+    .navigation a:hover,
+    .navigation a.active {
         font-weight: bold;
-        color: #00ADB5; /* Example color */
-        padding-left: 20px; /* Adjust for right shift */
+        color: #00ADB5;
+        /* Example color */
+        padding-left: 20px;
+        /* Adjust for right shift */
     }
 
 }
-
