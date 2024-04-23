@@ -103,8 +103,8 @@ ul {
     margin-top: 4rem;
 }
 
-/* Sections (About, Experience, Projects) */
-.section-heading {
+/* divs (About, Experience, Projects) */
+.div-heading {
     font-size: 1.75rem;
     margin-bottom: 2rem;
 }
@@ -189,7 +189,7 @@ ul {
     /* Example hover color */
 }
 
-.section-heading {
+.div-heading {
     font-size: 1.75rem;
     color: #FFFFF0;
     margin-bottom: 2rem;
@@ -269,7 +269,7 @@ ul {
         width: 100%;
     }
 
-    .section-heading {
+    .div-heading {
         position: static;
         /* Disable sticky positioning */
 
