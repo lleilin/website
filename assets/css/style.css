@@ -48,7 +48,7 @@ p {
 }
 
 a {
-    color: #00ADB5;
+    color: #57FFFFE6;
     /* Example color for links */
     text-decoration: none;
 }
@@ -176,7 +176,7 @@ ul {
     /* Allow for padding */
     background-color: #00ADB5;
     /* Example button color */
-    color: #EEEEEE;
+    color: #0F0F0F;
     padding: 12px 24px;
     border-radius: 5px;
     margin-top: 3rem;
@@ -283,7 +283,7 @@ ul {
     .navigation a:hover,
     .navigation a.active {
         font-weight: bold;
-        color: #00ADB5;
+        color: #57FFFF;
         /* Example color */
         padding-left: 20px;
         /* Adjust for right shift */
