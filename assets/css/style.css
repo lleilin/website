@@ -49,6 +49,10 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style-type: none;
+}
+
 /* Introduction */
 .introduction-name {
     font-size: 3rem;
@@ -63,6 +67,10 @@ a {
 .introduction-description {
     font-size: 1.2rem;
     margin-top: 1rem;
+}
+
+.headshot {
+    display: none;
 }
 
 /* Navigation (assuming you'll implement it later) */
@@ -104,7 +112,7 @@ a {
 }
 
 .experience-time {
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #AAAAAA; /* Example color for time */
 }
 
@@ -116,7 +124,8 @@ a {
 
 .experience-title {
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
 }
 
 .experience-description {
@@ -162,6 +171,18 @@ a {
     background-color: #007a85; /* Example hover color */
 }
 
+.section-heading {
+    font-size: 1.75rem;
+    color: #FFFFF0;
+    margin-bottom: 2rem;
+    position: sticky; /* Enable sticky positioning */
+    top: 0; /* Position at the top */
+    background-color: #222831; /* Match the background color */
+    z-index: 1; /* Ensure it stays on top of other elements */ 
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
 /* Responsiveness - Example for smaller screens */
 @media (min-width: 768px) {
     body {
@@ -172,6 +193,7 @@ a {
     }
 }
 
+/* Desktop view */
 @media (min-width: 1024px) {
     body {
         margin: auto;
@@ -203,9 +225,24 @@ a {
         padding: 2rem;
         width: 300px; /* Adjust the width as needed */
     }
+    .headshot {
+        display: block;
+        width:100%;
+    }
+    .section-heading {
+        position:static; /* Disable sticky positioning */
+
+    }
+
+    .navigation a {
+        transition: color 0.3s ease, padding-left 0.3s ease; /* Add transition */
+    }
+
+    .navigation a:hover, .navigation a.active {
+        font-weight: bold;
+        color: #00ADB5; /* Example color */
+        padding-left: 20px; /* Adjust for right shift */
+    }
+
 }
 
-.navigation ul li.active {
-    font-weight: bold;
-    color: #00ADB5; /* Example color */
-}
